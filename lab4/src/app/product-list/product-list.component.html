@@ -1,0 +1,34 @@
+<h2>Products</h2>
+<!-- <div class="grid"> -->
+  <div class="element" *ngFor="let product of products">
+    <h3>
+      <a [title] = "product.name + ' details ' "
+      [href]='product.kaspiUrl'> 
+        {{ product.name }}
+      </a>
+
+
+      <!-- [routerLink]="['/products', product.id]" -->
+      <!-- <img class="image" mat-card-image scr="/Users/tileukhan/Desktop/angular-xi6dbc-h8dtxq/src/assets/apple-iphone-13.jpeg">
+      
+      -->
+
+      <img class="image" *ngIf='showImage' [src]='product.imageUrl'>
+
+      <p *ngIf="product.description">
+        {{ product.description }} 
+      </p>
+
+      <button type="button" (click)="share(product.kaspiUrl)">
+        Share
+      </button>
+      <!-- https://wa.me/7771804748?text=Меня%20интересует%20ваше%20объявление%20о%20продаже%20машины -->
+
+    </h3>
+  </div>
+<!-- </div> -->
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

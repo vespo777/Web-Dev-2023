@@ -1,0 +1,30 @@
+.element{
+    /* border: .125rem solid;
+    text-align: justify;
+    display: inline-block;
+    font-size: 0;
+    padding: 4% 4% 0 4%; */
+
+    font-size: 1rem;
+    display: inline-block;
+    background: #eee;
+    border: .125em solid;
+    width: 350px;
+    padding: 2%
+}
+
+
+
+.image {
+    /* width: 300px; */
+    height: 200px;
+    align-content: center; 
+    display: flex;
+    margin-top: 15px;
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/

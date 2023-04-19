@@ -1,0 +1,10 @@
+<h1>Categories</h1>
+
+<div class="companies">
+
+  <ul>
+    <li *ngFor="let company of companies">
+      {{company.id}} - <a routerLink="{{company.id}}/vacancies" href="{{company.id}}/vacancies">{{company.name}}</a>
+    </li>
+  </ul>
+</div>

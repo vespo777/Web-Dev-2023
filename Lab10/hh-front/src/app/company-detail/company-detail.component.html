@@ -1,0 +1,9 @@
+
+<h1>{{company.name}}</h1>
+<div class="companies">
+  <ul>
+    <li *ngFor="let vacancy of vacancies">
+      {{vacancy.id}} - {{vacancy.name}}
+    </li>
+  </ul>
+</div>
